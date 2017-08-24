@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>user_form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../javaScript/validation.js"></script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <form name="myform" action="user_form.php" method="post" onsubmit="return validate();">
+            <table>
+            <tr>
+            <th>name:</th>
+            <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <th>gender</th>
+                <td><input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female</td>
+            </tr>
+            <tr>
+                <th>birthDate</th>
+            <input type="date" name="birthDate" id="birthDate">
+            </tr>
+            <tr>
+                <th>mobileNo.:</th>
+                <td><input type="number" name="mobileNo" id="mobileNo"></td>
+            </tr>
+            <tr>
+                <th>emailId</th>
+                <td><input type="email" name="emailId" id="emailId"></td>
+            </tr>
+            <tr>
+                <th>password</th>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+            <th>confirmPassword</th>
+            <td><input type="password" name="cnfrmPass"></td>
+            
+            </tr>
+            </table> 
+            <input type="submit" name="submit" value="submit">
+        </form>      
+    </body>
+</html>
